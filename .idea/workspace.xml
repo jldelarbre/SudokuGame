@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d9e7ef7-dd5c-45ac-ae6d-8b53f9bc4b9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/jldelarbre/SudokuBoardTest.java" afterDir="false" />
+    <list default="true" id="7d9e7ef7-dd5c-45ac-ae6d-8b53f9bc4b9a" name="Changes" comment="WIP">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java" afterDir="false" />
     </list>
+    <list id="ed5dfd4e-15b8-433a-997a-3e7b689add14" name="displayPossibilities" comment="displayPossibilities" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +17,13 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +40,9 @@
     &quot;accountId&quot;: &quot;16820133-a9b2-4695-9f60-5970abe8fb5d&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -45,23 +51,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.SudokuBoardTest.checkBoundChecking.executor": "Run",
-    "JUnit.SudokuBoardTest.checkEmptyBoard.executor": "Run",
-    "JUnit.SudokuBoardTest.executor": "Run",
-    "JUnit.SudokuBoardTest.possibleValuesForUnsetCellOnRowWithOneCellSet.executor": "Debug",
-    "JUnit.SudokuBoardTest.possibleValuesForUnsetCellWithOtherCellsSetOnRowColumnAndBox.executor": "Run",
-    "JUnit.SudokuBoardTest.shouldSetCell.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jean-luc/git/SudokuGame",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SudokuBoardTest.checkBoundChecking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SudokuBoardTest.checkEmptyBoard.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SudokuBoardTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SudokuBoardTest.possibleValuesForUnsetCellOnRowWithOneCellSet.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SudokuBoardTest.possibleValuesForUnsetCellWithOtherCellsSetOnRowColumnAndBox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SudokuBoardTest.shouldSetCell.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jean-luc/git/SudokuGame&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.SudokuBoardTest">
+}</component>
+  <component name="RunManager" selected="Application.SudokuMain">
+    <configuration name="SudokuMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.jldelarbre.SudokuMain" />
+      <module name="SudokuGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.jldelarbre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SudokuBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuGame" />
       <extension name="coverage">
@@ -77,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuBoardTest.checkBoundChecking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuBoardTest.checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_BoxCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuGame" />
       <extension name="coverage">
         <pattern>
@@ -87,13 +117,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.github.jldelarbre" />
       <option name="MAIN_CLASS_NAME" value="com.github.jldelarbre.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="checkBoundChecking" />
+      <option name="METHOD_NAME" value="checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_BoxCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuBoardTest.possibleValuesForUnsetCellOnRowWithOneCellSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuBoardTest.checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_RowCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuGame" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +133,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.github.jldelarbre" />
       <option name="MAIN_CLASS_NAME" value="com.github.jldelarbre.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="possibleValuesForUnsetCellOnRowWithOneCellSet" />
+      <option name="METHOD_NAME" value="checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_RowCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuBoardTest.possibleValuesForUnsetCellWithOtherCellsSetOnRowColumnAndBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuBoardTest.checkImpossibleToFillValueInRowErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SudokuGame" />
       <extension name="coverage">
         <pattern>
@@ -119,23 +149,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.github.jldelarbre" />
       <option name="MAIN_CLASS_NAME" value="com.github.jldelarbre.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="possibleValuesForUnsetCellWithOtherCellsSetOnRowColumnAndBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuBoardTest.shouldSetCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SudokuGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.jldelarbre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.jldelarbre" />
-      <option name="MAIN_CLASS_NAME" value="com.github.jldelarbre.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="shouldSetCell" />
+      <option name="METHOD_NAME" value="checkImpossibleToFillValueInRowErrors" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SudokuMain" />
         <item itemvalue="JUnit.SudokuBoardTest" />
-        <item itemvalue="JUnit.SudokuBoardTest.possibleValuesForUnsetCellWithOtherCellsSetOnRowColumnAndBox" />
-        <item itemvalue="JUnit.SudokuBoardTest.checkBoundChecking" />
-        <item itemvalue="JUnit.SudokuBoardTest.possibleValuesForUnsetCellOnRowWithOneCellSet" />
-        <item itemvalue="JUnit.SudokuBoardTest.shouldSetCell" />
+        <item itemvalue="JUnit.SudokuBoardTest.checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_RowCase" />
+        <item itemvalue="JUnit.SudokuBoardTest.checkImpossibleToFillValueInRowErrors" />
+        <item itemvalue="JUnit.SudokuBoardTest.checkGetPossibleValuesNotTakingPlaceOfOnePossiblePositionValue_BoxCase" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +174,53 @@
       <option name="presentableId" value="Default" />
       <updated>1712684962339</updated>
     </task>
+    <task id="LOCAL-00001" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1713213071906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713213071906</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1713390161163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713390161163</updated>
+    </task>
+    <task id="LOCAL-00003" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1713643699184</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713643699184</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -173,6 +233,26 @@
           <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
           <option name="timeStamp" value="7" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java</url>
+          <line>296</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java</url>
+          <line>312</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/jldelarbre/SudokuBoard.java</url>
+          <line>219</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
